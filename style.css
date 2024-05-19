@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background-image: url(Img/thomas-heintz-0tgMnMIYQ9Y-unsplash.jpg);
+  background-image: url(Img/annie-spratt-SE7Wrgxm5M4-unsplash.jpg);
   background-size: cover;
   background-repeat: repeat;
   width: 100%;
@@ -44,7 +44,7 @@ nav {
 }
 
 a {
-  color: #013a89;
+  color: #ef5615;
 }
 
 ul {
@@ -75,8 +75,8 @@ ul li:hover {
   align-items: center;
   flex-direction: column;
   margin: 160px 10px 0 10px;
-  font-size: 50px;
-  font-family: "Pacifico", cursive;
+  font-size: 70px;
+  font-family: "Neonderthaw", cursive;
   color: white;
   animation: neon 3s infinite;
 }
@@ -86,19 +86,19 @@ ul li:hover {
     text-shadow: white 0 0 12px;
   }
   39% {
-    text-shadow: #013a89 0 0 24px;
+    text-shadow: #ef5615 0 0 24px;
   }
   41% {
     text-shadow: none;
   }
   59% {
-    text-shadow: #013a89 0 0 36px;
+    text-shadow: #ef5615 0 0 36px;
   }
   61% {
     text-shadow: none;
   }
   100% {
-    text-shadow: #013a89 0 0 36px;
+    text-shadow: #ef5615 0 0 36px;
   }
 }
 
@@ -107,8 +107,8 @@ ul li:hover {
   justify-content: center;
   align-items: center;
   height: auto;
-  margin-top: 250px;
-  padding-top: 180px;
+  margin-top: 180px;
+  padding-top: 100px;
   padding-bottom: 20px;
   font-family: "Montserrat", sans-serif;
 }
@@ -124,7 +124,7 @@ ul li:hover {
   border-radius: 30px;
   background: linear-gradient
     (135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -146,7 +146,7 @@ ul li:hover {
   border-radius: 30px;
   background: linear-gradient
     (135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -177,7 +177,7 @@ ul li:hover {
 .biograph {
   margin-left: 10px;
   margin-right: 10px;
-  color: black;
+  color: white;
 }
 
 h3 {
@@ -185,7 +185,7 @@ h3 {
 }
 
 p {
-  color: black;
+  color: white;
 }
 
 .goal {
@@ -504,11 +504,12 @@ textarea {
   padding: 12px 20px;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 30px;
   font-size: 16px;
   outline: none;
   font-family: "Courier New", Courier, monospace;
+  color: white;
 }
 
 input:focus + label,
@@ -525,11 +526,12 @@ input[type="submit"] {
   transition: ease-in-out 0.2s;
   cursor: pointer;
   font-family: "Courier New", Courier, monospace;
+  color: #ef5615;
 }
 
 input[type="submit"]:hover {
-  background-color: #013a89;
-  color: #ef5615;
+  background-color: #ef5615;
+  color: white;
   font-family: "Courier New", Courier, monospace;
 }
 
