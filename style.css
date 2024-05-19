@@ -39,7 +39,7 @@ nav {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  margin: 20px 0 0 1010px;
+  margin: 20px 0 0 1150px;
   position: fixed;
 }
 
@@ -201,248 +201,81 @@ p {
   flex-direction: row;
   font-family: "Montserrat", sans-serif;
   color: #ef5615;
-  padding: 20px 0 20px 0;
+  padding: 130px 0 20px 0;
 }
 
-.projectWeb {
-  display: flex;
-  justify-content: start;
-  flex-direction: column;
-  margin: 50px 20px 20px 20px;
-}
-
-.glassProject {
+.container {
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 20px 0px 20px 150px;
-  padding-bottom: 30px;
-  width: auto;
-  height: auto;
-  border-radius: 30px;
-  background: linear-gradient
-    (135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(218, 119, 17, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-}
+  height: 500px;
+  gap: 10px;
+  margin-left: 140px;
 
-.project1 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-  margin: 50px 20px 20px 20px;
-  width: 300px;
-  height: 100px;
-  border-radius: 30px;
-  background: linear-gradient
-    (135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-}
+  > div {
+    flex: 0 0 120px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px black;
+    position: relative;
+    overflow: hidden;
 
-.imgProject1 {
-  border-radius: 50%;
-  background-size: cover;
-  width: 133px;
-  height: 133px;
-  padding-left: -300px;
-}
+    &:nth-of-type(1) {
+      background: url(Img/coffee-2847957_1280ok.png)
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(2) {
+      background: url(Img/Screenshot\ 2023-07-12\ alle\ 16.09.41.png)
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(3) {
+      background: url(Img/Screenshot\ 2023-12-11\ alle\ 22.36.36.png)
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(4) {
+      background: url(Img/Screenshot\ 2023-12-12\ alle\ 21.22.33.png)
+        no-repeat 50% / cover;
+    }
 
-.project2 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-  margin: 20px 20px 20px 20px;
-  width: 300px;
-  height: 100px;
-  border-radius: 30px;
-  background: linear-gradient
-    (135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-}
+    .content {
+      font-size: 1.5rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      opacity: 0;
+      flex-direction: column;
+      height: 100%;
+      justify-content: flex-end;
+      background: #ef5615;
+      background: linear-gradient(
+        0deg,
+        rgba(239, 86, 21, 0.2) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      transform: translatey(100%);
+      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+      visibility: hidden;
 
-.imgProject2 {
-  border-radius: 50%;
-  background-size: cover;
-  width: 133px;
-  height: 133px;
-  padding-left: -300px;
-}
+    }
 
-.project3 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-  margin: 20px 20px 50px 20px;
-  width: 300px;
-  height: 100px;
-  border-radius: 30px;
-  background: linear-gradient
-    (135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-}
+    .content h2 {
+      margin-bottom: 30px;
+    }
 
-.imgProject3 {
-  border-radius: 50%;
-  background-size: cover;
-  width: 133px;
-  height: 133px;
-  padding-left: -300px;
-}
+    &:hover {
+      flex: 0 0 250px;
+      box-shadow: 1px 3px 15px #ef5615;
+      transform: translatey(-30px);
+    }
 
-.WpProject {
-  display: flex;
-  justify-content: start;
-  flex-direction: column;
-  margin: 50px 20px 30px 20px;
-}
-
-.glassProjectWp {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 20px 20px 20px 20px;
-  width: auto;
-  height: auto;
-  border-radius: 30px;
-  background: linear-gradient
-    (135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(218, 119, 17, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-}
-
-.WpProject1 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-  margin: 20px 20px 50px 20px;
-  width: 300px;
-  height: 100px;
-  border-radius: 30px;
-  background: linear-gradient
-    (135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-}
-
-.imgWpProject1 {
-  border-radius: 50%;
-  background-size: cover;
-  width: 133px;
-  height: 133px;
-  padding-left: -300px;
-}
-
-.OtherProject {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 50px 20px 30px 20px;
-}
-
-.glassOtherProject {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 20px 150px 20px 0px;
-  width: auto;
-  height: auto;
-  border-radius: 30px;
-  background: linear-gradient
-    (135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(218, 119, 17, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-}
-
-.otherProject1 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-  margin: 20px 20px 50px 20px;
-  width: 300px;
-  height: 100px;
-  border-radius: 30px;
-  background: linear-gradient
-    (135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-}
-
-.imgOtherProject1 {
-  border-radius: 50%;
-  background-size: cover;
-  width: 133px;
-  height: 133px;
-  padding-left: -300px;
-}
-
-.formazione {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  font-family: "Montserrat", sans-serif;
-  color: #ef5615;
-  padding: 20px 20px 20px 20px;
-}
-
-.glassFormation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  margin: 20px 20px 20px 20px;
-  width: auto;
-  height: auto;
-  border-radius: 30px;
-  background: linear-gradient
-    (135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(218, 119, 17, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-}
-
-.Formation {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  flex-direction: column;
-  margin: 20px 20px 20px 40px;
-}
-
-.skillWeb {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  flex-direction: column;
-  margin: 20px 20px 20px 40px;
+    &:hover .content {
+      opacity: 1;
+      transform: translatey(0%);
+      visibility: visible;
+    }
+  }
 }
 
 .contatti {
@@ -453,6 +286,7 @@ p {
   font-family: "Montserrat", sans-serif;
   color: #ef5615;
   padding: 20px 20px 20px 20px;
+  margin-top: 120px;
 }
 
 .glassContact {
@@ -467,7 +301,7 @@ p {
   border-radius: 30px;
   background: linear-gradient
     (135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(218, 119, 17, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -549,6 +383,7 @@ input[type="submit"]:hover {
 
   .menu {
     font-size: smaller;
+    display: none;
   }
 
   .neon {
@@ -586,17 +421,19 @@ input[type="submit"]:hover {
   }
 
   .progetti {
+    width: 370;
     display: flex;
-    flex-direction: column;
-    margin: 50px 20px 50px 20px;
+    justify-content: center;
   }
 
-  .glassProject {
-    margin: 50px 20px 20px 20px;
+  .container {
+    display: flex;
+    justify-content: center;
+    margin: 0 10px 0 10px;
+    width: 300px;
+    > div {
+      flex: 0 0 75px;
   }
-
-  .glassOtherProject {
-    margin: 20px 20px 50px 20px;
   }
 }
 
@@ -624,7 +461,8 @@ input[type="submit"]:hover {
   .neon {
     display: flex;
     justify-content: center;
-    width: 600px;
+    width: 700px;
+    text-align: center;
   }
 
   .bio {
@@ -668,11 +506,14 @@ input[type="submit"]:hover {
   .progetti {
     display: flex;
     justify-content: center;
-    flex-direction: column;
   }
-
-  .glassProject,
-  .glassOtherProject {
-    margin: 0;
+  .container {
+    display: flex;
+    justify-content: center;
+    margin: 0 10px 0 10px;
+    width: 300px;
+    > div {
+      flex: 0 0 75px;
   }
+}
 }
