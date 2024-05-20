@@ -85,18 +85,23 @@ ul li:hover {
   0% {
     text-shadow: white 0 0 12px;
   }
+
   39% {
     text-shadow: #ef5615 0 0 24px;
   }
+
   41% {
     text-shadow: none;
   }
+
   59% {
     text-shadow: #ef5615 0 0 36px;
   }
+
   61% {
     text-shadow: none;
   }
+
   100% {
     text-shadow: #ef5615 0 0 36px;
   }
@@ -122,8 +127,7 @@ ul li:hover {
   width: 700px;
   height: 600px;
   border-radius: 30px;
-  background: linear-gradient
-    (135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  background: linear-gradient (135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -144,8 +148,7 @@ ul li:hover {
   width: 300px;
   height: 600px;
   border-radius: 30px;
-  background: linear-gradient
-    (135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  background: linear-gradient (135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -209,84 +212,92 @@ p {
   display: flex;
   justify-content: center;
   height: 500px;
-  gap: 10px;
-  margin-left: 140px;
+  gap: 30px;
+  margin-left: 110px;
+}
 
-  > div {
-    flex: 0 0 120px;
-    border-radius: 0.5rem;
-    transition: 0.5s ease-in-out;
-    cursor: pointer;
-    box-shadow: 1px 5px 15px black;
-    position: relative;
-    overflow: hidden;
+.container > div {
+  flex: 0 0 180px;
+  border-radius: 0.5rem;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  box-shadow: 1px 5px 15px black;
+  position: relative;
+  overflow: hidden;
+}
 
-    &:nth-of-type(1) {
-      background: url(Img/coffee-2847957_1280ok.png)
-        no-repeat 50% / cover;
-    }
-    &:nth-of-type(2) {
-      background: url(Img/Screenshot\ 2023-07-12\ alle\ 16.09.41.png)
-        no-repeat 50% / cover;
-    }
-    &:nth-of-type(3) {
-      background: url(Img/Screenshot\ 2023-12-11\ alle\ 22.36.36.png)
-        no-repeat 50% / cover;
-    }
-    &:nth-of-type(4) {
-      background: url(Img/Screenshot\ 2023-12-12\ alle\ 21.22.33.png)
-        no-repeat 50% / cover;
-    }
+.container > div:nth-of-type(1) {
+  background: url('Img/coffee-2847957_1280ok.png') no-repeat 50% / cover;
+}
 
-    .content {
-      font-size: 1.5rem;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      padding: 15px;
-      opacity: 0;
-      flex-direction: column;
-      height: 100%;
-      justify-content: flex-end;
-      background: #ef5615;
-      background: linear-gradient(
-        0deg,
-        rgba(239, 86, 21, 0.2) 0%,
-        rgba(255, 255, 255, 0) 100%
-      );
-      transform: translatey(100%);
-      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
-      visibility: hidden;
+.container > div:nth-of-type(2) {
+  background: url('Img/Screenshot%202023-07-12%20alle%2016.09.41.png') no-repeat 50% / cover;
+}
 
-    }
+.container > div:nth-of-type(3) {
+  background: url('Img/Screenshot%202023-12-11%20alle%2022.36.36.png') no-repeat 50% / cover;
+}
 
-    .content h2 {
-      margin-bottom: 30px;
-    }
+.container > div:nth-of-type(4) {
+  background: url('Img/Screenshot%202023-12-12%20alle%2021.22.33.png') no-repeat 50% / cover;
+}
 
-    &:hover {
-      flex: 0 0 250px;
-      box-shadow: 1px 3px 15px #ef5615;
-      transform: translatey(-30px);
-    }
+.container > div .content {
+  font-size: 1.5rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  opacity: 0;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  background: #ef5615;
+  background: linear-gradient(0deg, rgba(239, 86, 21, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  transform: translateY(100%);
+  transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+  visibility: hidden;
+}
 
-    &:hover .content {
-      opacity: 1;
-      transform: translatey(0%);
-      visibility: visible;
-    }
-  }
+.container > div .content h2 {
+  margin-bottom: 30px;
+}
+
+.container > div:hover {
+  flex: 0 0 250px;
+  box-shadow: 1px 3px 15px #ef5615;
+  transform: translateY(-30px);
+}
+
+.container > div:hover .content {
+  opacity: 1;
+  transform: translateY(0%);
+  visibility: visible;
 }
 
 .contatti {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: row;
   font-family: "Montserrat", sans-serif;
   color: #ef5615;
   padding: 20px 20px 20px 20px;
   margin-top: 120px;
+}
+
+.social h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.Linkdin {
+  margin: 0 10px;
+}
+
+.GitHub {
+  margin: 0 10px;
 }
 
 .glassContact {
@@ -296,11 +307,10 @@ p {
   flex-direction: row;
   margin: 30px 20px 60px 20px;
   padding: 40px 20px 20px 20px;
-  width: auto;
+  width: 700px;
   height: auto;
   border-radius: 30px;
-  background: linear-gradient
-    (135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  background: linear-gradient (135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(218, 119, 17, 0.18);
@@ -312,7 +322,7 @@ form {
   flex-direction: column;
   gap: 20px;
   max-width: 1000px;
-  width: 100%;
+  width: 600px;
 }
 
 .input-wrapper {
@@ -346,13 +356,13 @@ textarea {
   color: white;
 }
 
-input:focus + label,
-textarea:valid + label {
+input:focus+label,
+textarea:valid+label {
   top: -18px;
 }
 
-input:valid + label,
-textarea:valid + label {
+input:valid+label,
+textarea:valid+label {
   top: -16px;
 }
 
@@ -431,9 +441,23 @@ input[type="submit"]:hover {
     justify-content: center;
     margin: 0 10px 0 10px;
     width: 300px;
-    > div {
+
+    >div {
       flex: 0 0 75px;
+    }
   }
+
+  .glassContact {
+    width: auto;
+  }
+
+  .contatti{
+    display: flex;
+    flex-direction: column;
+  }
+
+  form {
+    width: auto;
   }
 }
 
@@ -507,13 +531,27 @@ input[type="submit"]:hover {
     display: flex;
     justify-content: center;
   }
+
   .container {
     display: flex;
     justify-content: center;
     margin: 0 10px 0 10px;
     width: 300px;
-    > div {
-      flex: 0 0 75px;
+
+    >div {
+      flex: 0 0 120px;
+    }
   }
-}
+  .glassContact {
+    width: 600px;
+  }
+
+  .contatti{
+    display: flex;
+    flex-direction: column;
+  }
+
+  form {
+    width: 580px;
+  }
 }
