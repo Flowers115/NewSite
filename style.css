@@ -175,6 +175,7 @@ ul li:hover {
   justify-content: space-between; /* Ensures the text and progress container are on opposite ends */
   align-items: center; /* Vertically centers the items */
   width: 80%;
+  margin-bottom: 10px;
 }
 
 .progress-container {
@@ -183,12 +184,11 @@ ul li:hover {
   border: 1px solid black;
   border-radius: 25px;
   overflow: hidden;
-  margin-bottom: 20px;
 }
 
 .skillProgress p {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .progress-bar {
