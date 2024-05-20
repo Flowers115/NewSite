@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background-image: url(Img/annie-spratt-SE7Wrgxm5M4-unsplash.jpg);
+  background-image: url(Img/unsplash_BL9op_atKxg.webp);
   background-size: cover;
   background-repeat: repeat;
   width: 100%;
@@ -160,6 +160,45 @@ ul li:hover {
   flex-direction: column;
   align-items: center;
   padding-bottom: 20px;
+  width: 100%;
+}
+
+.skills h3 {
+  padding-bottom: 40px;
+  font-size: 40px;
+
+}
+
+.skillProgress {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Ensures the text and progress container are on opposite ends */
+  align-items: center; /* Vertically centers the items */
+  width: 80%;
+}
+
+.progress-container {
+  width: 100px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 25px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.skillProgress p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.progress-bar {
+  display: flex;
+  align-items: end;
+  height: 30px;
+  width: 1;
+  background-color: #ef5615;
+  border-radius: 25px;
+  transition: width 0.2s ease;
 }
 
 .github {
@@ -199,7 +238,7 @@ p {
 
 .progetti {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   font-family: "Montserrat", sans-serif;
@@ -213,13 +252,12 @@ p {
   justify-content: center;
   height: 500px;
   gap: 30px;
-  margin-left: 110px;
 }
 
 .container>div {
   flex: 0 0 180px;
   border-radius: 0.5rem;
-  -webkit-transition: 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
   cursor: pointer;
   box-shadow: 1px 5px 15px black;
   position: relative;
@@ -227,19 +265,15 @@ p {
 }
 
 .container>div:nth-of-type(1) {
-  background: url('Img/coffee-2847957_1280ok.png') no-repeat 50% / cover;
-}
-
-.container>div:nth-of-type(2) {
   background: url('Img/Screenshot%202023-07-12%20alle%2016.09.41.png') no-repeat 50% / cover;
 }
 
-.container>div:nth-of-type(3) {
+.container>div:nth-of-type(2) {
   background: url('Img/Screenshot%202023-12-11%20alle%2022.36.36.png') no-repeat 50% / cover;
 }
 
-.container>div:nth-of-type(4) {
-  background: url('Img/Screenshot%202023-12-12%20alle%2021.22.33.png') no-repeat 50% / cover;
+.container>div:nth-of-type(3) {
+  background: url('Img/Screenshot%202024-05-20%20alle%2017.49.03.png') no-repeat 50% / cover;
 }
 
 .container>div .content {
@@ -262,6 +296,7 @@ p {
 
 .container>div .content h2 {
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .container>div:hover {
