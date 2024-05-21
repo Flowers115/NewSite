@@ -18,19 +18,27 @@ body {
   height: 100%;
 }
 
-body, a, button {
-  cursor: none; /* Nasconde il cursore di default */
+body,
+a,
+button {
+  cursor: none;
+  /* Nasconde il cursore di default */
 }
 
 #custom-cursor {
   position: absolute;
-  width: 10px; /* Regola le dimensioni del cursore */
+  width: 10px;
+  /* Regola le dimensioni del cursore */
   height: 10px;
   border: 1px solid #ef5615;
-  border-radius: 50%; /* Rende il cursore tondo */
-  background-color: transparent; /* Colore del cursore */
-  pointer-events: none; /* Evita che il cursore interferisca con i click */
-  z-index: 1000; /* Assicura che il cursore stia sopra gli altri elementi */
+  border-radius: 50%;
+  /* Rende il cursore tondo */
+  background-color: transparent;
+  /* Colore del cursore */
+  pointer-events: none;
+  /* Evita che il cursore interferisca con i click */
+  z-index: 1000;
+  /* Assicura che il cursore stia sopra gli altri elementi */
   transition: transform 0.1s ease-out;
 }
 
@@ -191,7 +199,8 @@ ul li:hover {
   margin-bottom: 10px;
   display: flex;
   justify-content: center;
-  text-decoration: none; /* Rimuove la sottolineatura dai link */
+  text-decoration: none;
+  /* Rimuove la sottolineatura dai link */
 }
 
 .skills button {
@@ -204,14 +213,74 @@ ul li:hover {
   color: white;
   font-size: 17px;
   cursor: pointer;
-  transition: all 0.1s ease-in-out; /* Aggiungi la transizione */
+  transition: all 0.1s ease-in-out;
+  /* Aggiungi la transizione */
   font-family: "Montserrat", sans-serif;
 
 }
 
 .skills button:hover {
-  transform: scale(1.1); /* Aggiungi questa linea per espandere il bottone */
+  transform: scale(1.1);
+  /* Aggiungi questa linea per espandere il bottone */
 }
+
+/* Modal Container */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+  text-align: center;
+}
+
+/* Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 .profilePicture {
   border-radius: 50%;
@@ -503,8 +572,8 @@ input[type="submit"]:hover {
     max-width: 230px;
   }
 
-form {
-  width: 100%;
+  form {
+    width: 100%;
     max-width: 200px;
   }
 
@@ -606,8 +675,8 @@ form {
     max-width: 400px;
   }
 
-form {
-  width: 100%;
+  form {
+    width: 100%;
     max-width: 500px;
   }
 
@@ -621,7 +690,7 @@ form {
   }
 
   input,
-  textarea{
+  textarea {
     width: 100%;
     max-width: 700px;
   }

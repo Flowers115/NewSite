@@ -71,14 +71,34 @@
         </div>
       </div>
     </div>
+
     <div class="glassSkills">
       <div class="skills">
         <h3>Skills</h3>
-        <a href="#"><button>Html&Css</button></a>
-        <a href=""><button>JavaScript</button></a>
-        <a href=""><button>Php&MySQL</button></a>
-        <a href=""><button>WordPress</button></a>
-        <a href=""><button>Bootstrap</button></a>
+        <button class="openModalBtn" data-modal="modal1">Html&Css</button>
+        <button class="openModalBtn" data-modal="modal2">JavaScript</button>
+        <button class="openModalBtn" data-modal="modal3">Php&MySQL</button>
+        <button class="openModalBtn" data-modal="modal4">WordPress</button>
+        <button class="openModalBtn" data-modal="modal5">Bootstrap</button>
+      </div>
+    </div>
+     <!-- The Modals-->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <span class="close" data-modal="modal1">&times;</span>
+        <img src="Img/HTMLeCSS.jpg" alt="Immagine 1">
+      </div>
+    </div>
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <span class="close" data-modal="modal2">&times;</span>
+        <img src="Img/JS adv.jpg" alt="Immagine 2">
+      </div>
+    </div>
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+        <span class="close" data-modal="modal3">&times;</span>
+        <img src="Img/PHP_e_MySQL_Certificato.png" alt="Immagine 3">
       </div>
     </div>
   </section>
@@ -138,9 +158,7 @@
     </div>
   </section>
 
-  <script src="JavaScript.js" async defer>
-
-  </script>
+  <script src="JavaScript.js"></script>
 </body>
 
 </html>
