@@ -500,7 +500,7 @@ input[type="submit"]:hover {
 
   .glassContact {
     width: 100%;
-    max-width: 200px;
+    max-width: 230px;
   }
 
 form {
@@ -511,6 +511,10 @@ form {
   .contatti {
     display: flex;
     flex-direction: column;
+  }
+
+  .contact {
+    margin: 0 20px;
   }
 
   input[type="submit"] {
