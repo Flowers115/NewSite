@@ -16,7 +16,6 @@ document.addEventListener("mouseenter", function () {
   cursor.style.opacity = 1; // Mostra il cursore
 });
 
-
 /*modal*/
 document.addEventListener("DOMContentLoaded", function () {
   console.log("DOM completamente caricato!");

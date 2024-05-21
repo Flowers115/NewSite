@@ -47,7 +47,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
+  margin: 10px 20px 0 20px;
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   scroll-behavior: smooth;
@@ -63,12 +63,13 @@ nav {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  margin: 20px 0 0 1150px;
+  margin: 20px 0 0 1070px;
   position: fixed;
 }
 
 a {
   color: #ef5615;
+  font-size: 20px;
 }
 
 ul {
@@ -396,11 +397,23 @@ p {
   margin-top: 120px;
 }
 
+.social {
+  margin-top: -455px;
+  margin-left: 150px;
+}
+
 .social h2 {
   display: flex;
   justify-content: center;
+  align-items: start;
   margin-bottom: 50px;
   font-size: 40px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .Linkdin {
@@ -416,7 +429,7 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  margin: 30px 20px 60px 20px;
+  margin: 30px 20px 150px 20px;
   padding: 40px 20px 20px 20px;
   width: 700px;
   height: auto;
@@ -432,6 +445,8 @@ p {
   color: #ef5615;
   font-size: 40px;
   padding-bottom: 40px;
+  margin-top: -110px;
+  margin-left: -70px;
 }
 
 form {
@@ -488,8 +503,11 @@ input[type="submit"] {
   transition: ease-in-out 0.2s;
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
-  color: #ef5615;
+  color: white;
+  background-color: #ef5615;
   width: 30%;
+  margin-bottom: -80px;
+  margin-left: -70px;
 }
 
 input[type="submit"]:hover {
@@ -567,9 +585,32 @@ input[type="submit"]:hover {
     }
   }
 
+  .contatti {
+    margin-top: 100px;
+  }
+
   .glassContact {
     width: 100%;
     max-width: 230px;
+    margin-top: 150px;
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .icon {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact h2 {
+    display: flex;
+    justify-content: center;
+    margin: -100px 0 0 0;
   }
 
   form {
@@ -587,7 +628,11 @@ input[type="submit"]:hover {
   }
 
   input[type="submit"] {
-    width: 50%;
+    width: 200%;
+    max-width: 270px;
+    display: flex;
+    justify-content: center;
+    margin-left: -20px;
   }
 }
 
@@ -673,6 +718,7 @@ input[type="submit"]:hover {
   .glassContact {
     width: 100%;
     max-width: 400px;
+    margin-top: 150px;
   }
 
   form {
@@ -683,6 +729,25 @@ input[type="submit"]:hover {
   .contatti {
     display: flex;
     flex-direction: column;
+    margin-top: 100px;
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .icon {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact h2 {
+    display: flex;
+    justify-content: center;
+    margin: -100px 0 0 0;
   }
 
   .input-wrapper {
@@ -696,6 +761,10 @@ input[type="submit"]:hover {
   }
 
   input[type="submit"] {
-    width: 50%;
+    width: 200%;
+    max-width: 450px;
+    display: flex;
+    justify-content: center;
+    margin-left: -110px;
   }
 }
