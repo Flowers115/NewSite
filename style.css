@@ -204,6 +204,8 @@ ul li:hover {
   font-size: 17px;
   cursor: pointer;
   transition: all 0.1s ease-in-out; /* Aggiungi la transizione */
+  font-family: "Montserrat", sans-serif;
+
 }
 
 .skills button:hover {
@@ -328,6 +330,7 @@ p {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  font-size: 40px;
 }
 
 .Linkdin {
@@ -353,6 +356,12 @@ p {
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(218, 119, 17, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.contact h2 {
+  color: #ef5615;
+  font-size: 40px;
+  padding-bottom: 40px;
 }
 
 form {
@@ -407,14 +416,15 @@ textarea:valid+label {
 input[type="submit"] {
   transition: ease-in-out 0.2s;
   cursor: pointer;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Montserrat", sans-serif;
   color: #ef5615;
+  width: 30%;
 }
 
 input[type="submit"]:hover {
   background-color: #ef5615;
   color: white;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Media Query MOBILE */
@@ -436,7 +446,8 @@ input[type="submit"]:hover {
 
   .neon {
     text-align: center;
-    font-size: 40px;
+    font-size: 20px;
+    margin-top: 150px;
   }
 
   .bio {
