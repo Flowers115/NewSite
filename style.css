@@ -153,6 +153,7 @@ ul li:hover {
 .text_bio {
   text-align: center;
   margin-top: 50px;
+  font-size: 16px;
 }
 
 .glassSkills {
@@ -401,6 +402,7 @@ textarea {
   outline: none;
   font-family: "Montserrat", sans-serif;
   color: white;
+  width: 93%;
 }
 
 input:focus+label,
@@ -511,8 +513,8 @@ form {
     flex-direction: column;
   }
 
-  form {
-    width: auto;
+  input[type="submit"] {
+    width: 50%;
   }
 }
 
@@ -602,7 +604,7 @@ form {
 
 form {
   width: 100%;
-    max-width: 400px;
+    max-width: 500px;
   }
 
   .contatti {
@@ -610,7 +612,17 @@ form {
     flex-direction: column;
   }
 
-  form {
-    width: 580px;
+  .input-wrapper {
+    width: 100%;
+  }
+
+  input,
+  textarea{
+    width: 100%;
+    max-width: 700px;
+  }
+
+  input[type="submit"] {
+    width: 50%;
   }
 }
