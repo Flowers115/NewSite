@@ -505,6 +505,7 @@ input[type="submit"] {
   font-family: "Montserrat", sans-serif;
   color: white;
   background-color: #ef5615;
+  border: none;
   width: 30%;
   margin-bottom: -80px;
   margin-left: -70px;
@@ -633,6 +634,7 @@ input[type="submit"]:hover {
     display: flex;
     justify-content: center;
     margin-left: -20px;
+    border: none;
   }
 }
 
