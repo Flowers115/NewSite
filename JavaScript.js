@@ -54,3 +54,43 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+//
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault(); // Previene l'invio del form normale
+
+    // Raccolta dati dal form
+    const formData = new FormData(this);
+
+    // Invia dati con Fetch API a Formspree
+    fetch(this.action, {
+      method: "POST",
+      body: formData,
+      headers: {
+        Accept: "application/json",
+      },
+    })
+      .then((response) => {
+        if (response.ok) {
+          // Se la richiesta ha successo, resetta il form
+          this.reset();
+          alert("Messaggio inviato con successo!");
+        } else {
+          // Gestisci l'errore
+          response.json().then((data) => {
+            if (data.hasOwnProperty("errors")) {
+              alert(data["errors"].map((error) => error["message"]).join(", "));
+            } else {
+              alert("Errore durante l'invio del form. Per favore riprova.");
+            }
+          });
+        }
+      })
+      .catch((error) => {
+        // Gestisci l'errore
+        console.error("Errore:", error);
+        alert("Errore durante l'invio del form. Per favore riprova.");
+      });
+  });
